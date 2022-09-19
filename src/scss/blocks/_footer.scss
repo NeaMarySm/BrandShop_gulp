@@ -1,0 +1,33 @@
+.footer {
+    background-color: $black;
+    min-height: 79px;
+}
+.copyright {
+    float: left;
+    padding: 0;
+    color: $textWhite;
+    @include text(16px, 19px, 400);
+    margin-top: 30px;
+    letter-spacing: 0.5px;
+}
+.social-item {
+    background-color: #fff;
+    display: inline-block;
+    margin-left: 4px;
+}
+.social-link {
+    min-width: 32px;
+    min-height: 32px;
+    color: $black2;
+    @include flexRow;
+    font-size: 16px;
+     &:hover {
+        background-color: $pink;
+        color: #fff;
+     }
+
+}
+.socials {
+    float: right;
+    margin-top: 24px;
+}

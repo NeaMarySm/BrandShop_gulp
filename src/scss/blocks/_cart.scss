@@ -1,0 +1,99 @@
+.cart-container {
+    @include flexSpBetw;
+    align-items: flex-start;
+    margin-top: 96px;
+    margin-bottom: 128px;
+}
+.cart-content {
+    max-width: $cartWidth;
+    @include flexColCenter;
+}
+.cart-item {
+    max-width: $cartWidth;
+    min-height: 306px;
+    @include flexSpBetw;
+    align-items: flex-start;
+    margin-bottom: 40px;
+     &-features {
+        min-height: 306px;
+        @include flexSpBetw;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 30px;
+        flex-wrap: wrap;
+         h2 {
+             margin: 0;
+             margin-top: 22px;
+             @include textUpp(24px, 29px, 400);
+             color: $black;
+             
+         }
+         ul {
+            margin: 0;
+            margin-bottom: 57px;
+            padding: 0;
+            @include text (22px, 26px, 400);
+            color: #575757;
+         }
+         li {
+             margin-bottom: 6px;
+         }
+         span {
+            color: $darkPink;
+         }
+         input[type="number"]{
+             width: 44px;
+             border: 1px solid $borderColor;
+             margin-left: 20px;
+             font-size: 18px;
+             text-align: center;
+             color: #656565;
+         }
+     }
+    box-shadow: $shadow;
+}
+.cart-item button.delete-button {
+    margin: 20px 16px;
+ }
+.cart-buttons-area {
+    width: $cartWidth;
+    @include flexSpBetw;
+    margin-top: 32px;
+}
+.shipping-side {
+    @include flexColCenter;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+.checkout {
+    margin-top: 57px;
+    width: 360px;
+    height: 214px;
+    background-color: #F5F3F3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 40px 44px 42px 43px;
+     p {
+         margin: 0;
+         @include textUpp(11px, 13px, 400);
+         color: $colorA4;
+     }
+     p.grand {
+         margin: 0;
+        @include textUpp(16px, 19px, 300);
+        color: $black;
+         span {
+             margin: 0;
+             color: $pink;
+             font-weight: 700;
+         }
+     }
+     .hr {
+         width: 275px;
+         height: 1px;
+         background-color: #E2E2E2;
+     }
+}
+

@@ -1,0 +1,124 @@
+/* subscribe form */
+.subscribe-email {
+    width: 256px;
+    height: 49px;
+    border: none;
+    background-color: #E1E1E1;
+    border-radius: 24px 0 0 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+     &:focus {
+        border:none;
+        outline:none;
+     }
+     &::placeholder {
+        color: $black2;
+        @include text();
+        opacity: 0.67;
+        text-transform: capitalize;
+     }
+}
+.subscribe-submit {
+    min-width: 100px;
+    height: 49px;
+    border: none;
+    background-color: $pink;
+    border-radius: 0 24px 24px 0;
+    color: #fff;
+    @include text();
+    margin-left: -3px;
+    cursor: pointer;
+    @include transition;
+     &:hover {
+         background-color: #fff;
+         color: $pink;
+     }
+}
+/* cart, registration form */
+
+.form-style {
+     fieldset {
+         border: none;
+         padding: 0;
+     }
+     legend {
+         @include text(16px, 19px, 300);
+         color: $black;
+     }
+     input[type="radio"]{
+         width: 17px;
+         height: 17px;
+         margin: 0;
+         margin-right: 10px;
+     }
+     input {
+         width: $inputWidth;
+         height: 45px;
+         border: $borderGray;
+         margin-top: 20px;
+         padding-left: 17px;
+         padding-right: 17px;
+         &::placeholder {
+            color: $black;
+            @include text(13px, 16px, 300);
+            text-transform: capitalize;
+            opacity: 0.67;
+         }
+         /*&:first-child::placeholder {
+             color: #B1B1B1;
+             opacity: 0.67;
+         }*/
+     }
+     p.password-terms {
+         @include text(13px, 16px, 300);
+         width: $inputWidth;
+         color: #B1B1B1;
+
+    }
+}
+.registration .registration-form input::placeholder {
+    color: #B1B1B1;
+}
+
+
+input.shipping-submit {
+    padding: 0;
+    width: 101px;
+    height: 35px;
+    @include text(11px, 13px, 300);
+    color: #4a4a4a;
+    cursor: pointer;
+    @include transition;
+     &:hover {
+        background-color: $colorA4;
+        color: #fff;
+     }
+}
+.gender {
+    @include text(11px, 13px, 300);
+    color: #000;
+    margin-top: 31px;
+    margin-bottom: 33px;
+    @include flexStart;
+     span {
+         margin-right: 20px;
+     }
+}
+input.registration-submit {
+    border: none;
+    min-width: 167px;
+    height: 50px;
+    background-color: $pink;
+    @include textUpp();
+    @include flexRow;
+    color: #fff;
+    cursor: pointer;
+    @include transition;
+     &:hover {
+        border: 1px solid $pink;
+        background-color: #fff;
+        color: $pink;
+     }
+
+}
+

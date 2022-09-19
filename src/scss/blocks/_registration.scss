@@ -1,0 +1,26 @@
+.registration-container {
+    margin-top: 64px;
+    margin-bottom: 96px;
+    @include flexSpBetw;
+    align-items: flex-start;
+}
+.perks {
+    max-width: 652px;
+     h2 {
+         margin: 0;
+         @include textUpp (24px, 29px, 300);
+         color: #000;
+     }
+     p {
+        @include text (24px, 29px, 300);
+        color: #000;
+     }
+     ul {
+         list-style-image: url(@img/list-marker.png);
+     }
+     li {
+        margin-bottom: 16px;
+        @include text (24px, 29px, 300);
+        color: #000;
+     }
+}

@@ -1,0 +1,67 @@
+@@include("html/head.html", {"title": "Cart"})
+<body>
+@@include("html/header.html")
+    <header class="page-header">
+        <div class="container page-header-container">
+            <h2 class="page-title">SHOPPING CART</h2>
+        </div>
+    </header>
+    <h1 class="visually-hidden">Cart</h1>
+    <div class="container cart-container">
+        <section class="cart-content">
+            <div class="cart-item">
+                <img src="@img/catalog-img/3.jpg" alt="man3" width="262" height="306">
+                <div class="cart-item-features">
+                    <h2>MANGO  PEOPLE  T-SHIRT </h2>
+                    <ul>
+                        <li>Price: <span>$300</span></li>
+                        <li>Color: Red</li>
+                        <li>Size: Xl</li>
+                        <li>Quantity:	<input type="number" min="1" value="2"></li>
+                    </ul>
+                </div>
+                <button class="delete-button button"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="cart-item">
+                <img src="@img/catalog-img/2.jpg" alt="man2" width="262" height="306">
+                <div class="cart-item-features">
+                    <h2>MANGO  PEOPLE  T-SHIRT</h2>
+                    <ul>
+                        <li>Price: <span>$300</span></li>
+                        <li>Color: Red</li>
+                        <li>Size: Xl</li>
+                        <li>Quantity:	<input type="number" min="1" value="2"></li>
+                    </ul>
+                </div>
+                <button class="delete-button button"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="cart-buttons-area">
+                <button class="cart-button button">Clear shopping cart</button>
+                <a href="catalog.html" class="cart-button">Continue shopping</a>
+            </div>
+        </section>
+        <section class="shipping-side">
+            <h2 class="visually-hidden">Section Heading</h2>
+            <form class="shipping-form form-style" action="#">
+                <fieldset>
+                    <legend>SHIPPING ADRESS</legend>
+                    <input type="text" placeholder="Bangladesh"><br>
+                    <input type="text" placeholder="State"><br>
+                    <input type="text" placeholder="Postcode / Zip"><br>
+                    <input class="button shipping-submit" type="submit" value="GET A QUOTE">
+                </fieldset>
+            </form>
+            <div class="checkout">
+                <p>SUB TOTAL $900</p>
+                <p class="grand">GRAND TOTAL <span>$900</span></p>
+                <div class="hr"></div>
+                <button class="button checkout-button">PROCEED TO CHECKOUT</button>
+            </div>
+        </section>
+    </div>
+    
+    @@include("html/feedback.html")
+   @@include("html/footer.html")
+   @@include("html/script.html")
+</body>
+</html>

@@ -1,0 +1,26 @@
+
+@use 'sass:math';
+@use 'sass:color';
+
+@import "config";
+@import "fonts";
+@import "mixin";
+@import "blocks/buttons";
+@import "blocks/inputs";
+@import "blocks/dropdowns";
+@import "blocks/header";
+@import "blocks/burger-menu";
+@import "blocks/banner";
+@import "blocks/offer";
+@import "blocks/page-header";
+@import "blocks/catalog";
+@import "blocks/benefits";
+@import "blocks/feedback";
+@import "blocks/footer";
+@import "blocks/product";
+@import "blocks/cart";
+@import "blocks/registration";
+@import "blocks/slider";
+
+@import "media";
+

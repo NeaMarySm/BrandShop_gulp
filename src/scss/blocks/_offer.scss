@@ -1,0 +1,49 @@
+.offer {
+    margin-top: 65px;
+    @include flexSpBetw;
+    flex-wrap: wrap;
+}
+.offer-item {
+    width: /*360px*/ 31.5%;
+    height: 260px;
+}
+.offer-link {
+    height: 100%;
+    @include flexColCenter;
+     &:hover {
+        transform: rotateX(360deg);
+        transition-duration: 1s;
+     }
+}
+.offer-women {
+    background-image: url(@img/offer-img/women.jpg);
+    @include offerBackGr;
+}
+.offer-men {
+    background-image: url(@img/offer-img/men.jpg);
+    @include offerBackGr;
+}
+.offer-kids {
+    background-image: url(@img/offer-img/kids.jpg);
+    @include offerBackGr;
+}
+.offer-accesories {
+    margin-top: 30px;
+    width: 100%;
+    height: 180px;
+    background-image: url(@img/offer-img/accesories.jpg);
+    @include offerBackGr;
+}
+.offer-link p {
+    color: #FFFFFF;
+    @include textUpp(16px, 19px, 400);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.offer-link h3 {
+    color: $pink;
+    @include textUpp(24px, 29px, 700);
+    margin: 0;
+    text-align: center;
+}

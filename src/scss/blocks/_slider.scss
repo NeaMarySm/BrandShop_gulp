@@ -1,0 +1,35 @@
+/* slider */
+
+.slider-container {
+    width: 100%;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+// .slider{
+//     align-items: center;
+// }
+
+.arrow-button {
+    width: 47px;
+    height: 47px;
+    color: #000;
+    background-color: #D8D8D8;
+    font-size: 24px;
+    cursor: pointer;
+    @include transition;
+    position: absolute;
+
+     &:hover{
+        color: $darkPink;
+     }
+     &-left {
+        top:calc(50% - 23.5px);
+        left: 0;
+    }
+    &-right {
+        top:calc(50% - 23.5px);
+        right: 0;
+     }
+}

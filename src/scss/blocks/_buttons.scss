@@ -1,0 +1,91 @@
+.button {
+    border: none;
+    outline: none;
+    background-color: inherit;
+    font-family: inherit;
+} 
+.button-browse {
+    width: 212px;
+    height: 48px;
+    border: $pink solid 1px;
+    color:#F26376;
+    @include flexRow;
+    margin-top: 47px;
+    cursor: pointer;
+    letter-spacing: 1.1px;
+    @include btn_anim;
+     &:hover {
+        background-color: #F26376;
+        color: #FFFFFF;
+     }
+       
+}
+button.button-add {
+    @include text(16px, 19px, 400);
+    margin-bottom: 63px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-right: 30px;
+    padding-left: 11px;
+    fill: $darkPink;
+    @include transition;
+     &:hover {
+        fill:#fff;
+     }
+}
+.button-cat-hover {
+    width: 139px;
+    height: 44px;
+    border: 1px solid #fff;
+    @include flexRow;
+    @include text();
+    color: #FFFFFF;
+    cursor: pointer;
+    background-color: transparent;
+    @include btn_anim;
+     svg {
+         margin-right: 11px;
+     }
+     
+}
+
+/* cart */
+button.delete-button {
+    font-size: 26px;
+    color: #575757;
+    cursor: pointer;
+    transition-duration: 0.5s;
+     &:hover {
+        color: $colorA4;
+     }
+}
+.cart-button {
+    min-width: 235px;
+    height: 50px;
+    @include textUpp (14px, 17px, 300);
+    color: #000;
+    border: $borderGray;
+    @include flexRow;
+    cursor: pointer;
+    @include transition;
+     &:hover {
+         background-color: $colorA4;
+         color: #fff;
+     }
+}
+.checkout-button {
+    margin: 0;
+    width: 273px;
+    height: 50px;
+    background-color: $darkPink;
+    color: #fff;
+    @include textUpp(16px, 19px, 300);
+    @include flexRow;
+    cursor: pointer;
+    @include transition;
+     &:hover {
+        background-color: #FFFFFF;
+        color: $darkPink;
+     }
+}

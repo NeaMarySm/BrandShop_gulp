@@ -1,0 +1,46 @@
+.header {
+    background-color: $black;
+    min-height: $headerHeight;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 1rem
+}
+// .header-item {
+//     display: inline-block;
+// }
+.logo-icon {
+    padding-right: 0.03%;
+}
+.menu {
+    padding-top: 9px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu .header-item {
+    padding-left: 1rem;
+}
+.cart {
+    position: relative;
+    padding-right: 0.7rem;
+}
+.cart-amount {
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    background-color: $pink;
+    text-align: center;
+    color: #ffffff;
+    @include text(12px, 14px, 400);
+    vertical-align: middle;
+    padding-top: 3px;
+    position: absolute;
+    top: -7px;
+    right: 0px;
+}

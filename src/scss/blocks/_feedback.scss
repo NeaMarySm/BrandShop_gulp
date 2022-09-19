@@ -1,0 +1,49 @@
+.feedback {
+    min-height: 448px;
+    background-image: url(@img/photo-subscribe.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #F1F1F1;
+}
+.feedback-container {
+    min-height: 448px;
+    display: flex;
+    justify-content: space-between;
+}
+.feedback-figure {
+    margin: 0;
+}
+.quote {
+    max-width: 360px;
+    text-align: center;
+    margin-top: 94px;
+}
+.quote-pic {
+    border-radius: 50%;
+    margin-bottom: 26px;
+    margin-left: -19px;
+}
+.quote-text {
+    color: $black2;
+    @include text(20px, 24px, 400);
+
+     span {
+        font-style: italic;
+     }
+}
+.subscribe {
+    max-width: 550px;
+    height: 142px;
+    text-align: center;
+    margin-top: 150px;
+}
+.subscribe-text {
+    margin: 0;
+    margin-bottom: 25px;
+    color: $black2;
+    @include textUpp(18px, 30px, 400);
+
+     span {
+        @include textUpp(24px, 37px, 700);
+     }
+}

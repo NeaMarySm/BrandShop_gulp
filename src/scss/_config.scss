@@ -1,0 +1,100 @@
+// USER VARIABLES SECTION
+$pink: #F16D7F;
+$darkPink: #EF5B70;
+$bgPink: #F8F3F4;
+$containerWidth: 1140px;
+$inputWidth: 360px;
+$headerHeight: 4.68rem;
+$bannerHeight: 47.75rem;
+$colorA4:#A4A4A4;
+$borderGray: 1px solid $colorA4;
+$lightGray: #EBEBEB;
+$black: #222222;
+$black2: #222224;
+$textWhite: #FBFBFB;
+$borderColor: #EAEAEA;
+$filterGray:#6F6E6E;
+$cartWidth: 40.75rem;
+$shadow: 17px 19px 24px 0px rgba(0, 0, 0, 0.13);
+@keyframes jump {
+
+    20% {
+        transform: translateX(100%);
+    }
+    40% {
+        transform: translateY(-150%);
+    }
+    80% {
+         transform: translateX(-100%);
+         
+     }
+    100% {
+        transform: translateX(0);
+    }
+    
+  }
+$accent:$pink; // Accent Color
+// $fontsize: 16px; // Body Font Size
+// $textcolor: #333; // Text Color
+// $lineheight: 1.65; // Document Line Height
+// $userfont: roboto-oh5, sans-serif; // User Font Family
+// $systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif; // System Font Family
+
+
+// FONTS LOAD SECTION
+
+@mixin font($fname, $fstyle, $fweight, $furl){
+	@font-face{
+		font-family: $fname;
+		font-style: $fstyle;
+		font-weight: $fweight;
+		src: url($furl) format('woff2');
+}}
+
+// GENERAL CSS SETTINGS
+* {
+    box-sizing: border-box;
+}
+html, body {
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Lato', Arial, sans-serif;
+    display: grid;
+    grid-template-rows: min-content 1fr  min-content;
+    overflow-x: hidden
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+}
+.container {
+    padding: 0 calc(50% - 1140px / 2);
+  }
+.visually-hidden {
+    position: absolute;
+    left: -999999px;
+    width: 0px;
+    height: 0;
+    visibility: hidden;
+  }
+
+::placeholder {
+	color: #666;
+}
+
+::selection{
+    background-color: $accent;
+	color: #fff;
+}
+
+input, textarea{
+	outline: none;
+	&:focus:required:invalid
+		{border-color: red;}
+	&:required:valid{
+		border-color: green;}
+}
+
+	

@@ -1,0 +1,67 @@
+#burger {
+    display: none;
+}
+#burger:checked ~ .overlay {
+    display: flex;
+}
+.burger-open {
+    cursor: pointer;
+}
+.overlay {
+    position: absolute;
+    z-index: 8;
+    top: $headerHeight;
+    right: 0;
+    left: 0;
+    min-height: $bannerHeight;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: flex-end;
+    display: none; 
+}
+.nav {
+    width: 232px;
+    background-color: #fff;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    position: relative;
+    padding-left: 34px;
+    padding-top: 37px;
+     h3 {
+         margin: 0;
+         @include textUpp(14px, 17px, 700);
+         color: #000000;
+     }
+     h4 {
+         @include textUpp;
+         color: $pink;
+     }
+     ul{
+         padding: 0;
+     }
+     li {
+         padding-left: 21px;
+         padding-bottom: 11px;
+         &:last-child {
+             padding-bottom: 0;
+         }
+     }
+     
+}
+.nav-link {
+    @include text;
+    color: $filterGray;
+     &:hover {
+         color:$pink;
+     }
+}
+.burger-close {
+    position: absolute;
+    top: 16px;
+    right: 17px;
+    cursor: pointer;
+     i {
+         font-size: 20px;
+         &:hover {
+             color:$colorA4;
+         }
+     }
+}

@@ -1,0 +1,300 @@
+@media (max-width: 1180px) {
+    .container {
+         padding: 0 1rem;
+     }
+     .slider {
+         img {
+             width: 466px;
+             height: 565px;
+             margin: 0;
+         }
+     }
+     .product-card {
+         width: 100%;
+         margin: 0 auto;
+     }
+
+}
+ @media (max-width: 1120px) {
+     .catalog-container{
+         justify-content: center;
+     }
+     .catalog-item:nth-child(2n-1){
+         margin-right: 30px;
+     }
+   
+    .catalog-item:nth-child(9){
+        display: none;
+    }
+    .catalog-item-extra {
+        display: none;
+    }
+    /* cart */ 
+    .cart-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .shipping-side {
+        width: 100%;
+        margin-top: 64px;
+        flex-direction: row;
+        justify-content: center;   
+    }
+    .cart-buttons-area {
+        width: 508px;
+    }
+    .checkout {
+        margin-left: 15px;
+    }
+    /* registration */
+    .registration-container {
+        margin-top: 40px;
+    }
+    .perks {
+        margin-left: 22px;
+    }
+ }
+ @media (max-width: 800px) {
+     /* banner */
+    .banner-img {
+         min-height: 368px;
+         background-size: cover;
+     }
+     .banner-text-area{
+         min-height: 368px;
+     }
+     .banner-text {
+         margin-top: 138px;
+     }
+     .banner-text h2 {   
+        @include textUpp(2.75rem, 3.31rem, 900);
+    }
+    .banner-text p {
+        @include textUpp(1.5rem, 1.8rem, 700);
+    }
+    /* offer */
+    .offer-item {
+        height: 168px;
+    }
+    .offer-accesories {
+        height: 116px;
+    }
+    /* catalog */
+   
+    .catalog-item:nth-child(2n-1){
+        margin-right: 16px;
+    }
+    .filter {
+        margin-top: 24px;
+        margin-bottom: 10px;
+    }
+
+    /* benefits */
+    .benefits {
+        margin-top: 64px;
+        
+         &-container {
+            flex-direction: column;
+         }
+         &-item {
+            margin-top: 48px;
+            &:last-child {
+                margin-bottom: 64px;
+            }
+         }
+    }
+    /* feedback */
+    .feedback-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .quote {
+        margin-top: 64px;
+    }
+    .subscribe {
+        margin-top: 48px;
+        margin-bottom: 140px;
+    }
+
+    
+ }
+
+
+ @media (max-width: 767px) {
+    .catalog-item:nth-child(2n-1){
+        margin-right: 0;
+    }
+    .shipping-side {
+        flex-direction: column;
+    }
+    .checkout {
+        margin-left: 0;
+    }
+    .registration-container {
+        @include flexColCenter;
+        align-items: flex-start;
+    }
+    .perks {
+        margin-top: 40px;
+        margin-left: 0;
+    }
+ }
+ @media (max-width: 700px) {
+    .banner-text {
+        margin-left: 0;
+    }
+    .prod-top {
+        width: 100%;
+        padding: 64px 25px;
+    }
+ }
+
+
+ @media (max-width: 550px) {
+    .container {
+        padding: 0 0.5rem;
+    }
+    .registr-header {
+        display: none;
+    }
+    .cart {
+        display: none;
+    }
+     /* banner */
+    .banner-img {
+        display: none;
+    }
+    .banner-text-area {
+        width: 100%;
+        @include flexRow;
+    }
+    .banner-text {
+        margin-top: 0;
+    }
+    .banner-text h2 {   
+       @include textUpp(2.37rem, 2.88rem, 900);
+    }
+    .banner-text p {
+       @include textUpp(1.25rem, 1.5rem, 700);
+    }
+    /* page header */
+    .page-header-container {
+        @include flexColCenter;
+        justify-content: space-around;
+    }
+    .page-title {
+        margin: 0;
+    }
+    .catalog-menu {
+        margin-bottom: 25px;
+    }
+   /* catalog */
+    .filter-icon {
+       display: none;
+    }
+    .filter-icon-smallscreen {
+    display: block;
+    }
+    .filter-center {
+        min-width: 260px;
+    }
+    .filter-button-center {
+        @include textUpp (0.75rem, 0.875rem, 400);
+    }
+    /* product */ 
+    .slider img {
+            width: 374px;
+            height: 454px;
+    }
+    .filter-button-prod {
+        @include textUpp(0.625rem, 0.75rem, 400);
+    }
+    .catalog-margin {
+        margin-top: 34px;
+        margin-bottom: 64px;
+    }
+    /* cart */ 
+    .cart-container {
+        margin-top: 39px;
+        margin-bottom: 96px;
+    }
+    .cart-buttons-area {
+        width: 100%;
+        margin-top: 0;
+    }
+    .cart-button {
+        min-width: 175px;
+        height: 33px;
+        @include text(0.75rem, 0.875rem, 400);
+        text-transform: none;
+        color: #575757;
+    }
+    .cart-content {
+        max-width: 358px;
+    }
+    .cart-item {
+        max-width: 22.4rem;
+        min-height: 188px;
+        margin-bottom: 2rem;
+        box-shadow: (8px 8px 21px rgba(0, 0, 0, 0.13));
+         img {
+             width: 144px;
+             height: 188px;
+        }
+        &-features {
+            min-height: 188px;
+            margin-left: 15px;
+             h2 {
+                 margin-top: 13px;
+                 @include textUpp(1rem, 1.19rem, 400);       
+             }
+             ul {
+                margin-bottom: 32px;
+                @include text;
+             }
+             li {
+                 margin-bottom: 4px;
+             }
+             input[type="number"]{
+                 width: 24px;
+                 font-size: 10px;
+             }
+         }
+    }
+    .cart-item button.delete-button {
+        margin: 17px 12px;
+        font-size: 0.81rem;
+     }
+   /* offer */
+    .offer-item {
+       width: 100%;
+       height: 249px;
+       margin-top: 32px;
+    }
+    .offer-accesories {
+        height: 111px;
+    }
+    /* benefits */
+    .benefits {
+        margin-top: 96px;
+    }
+    /* feedback */
+    .subscribe-text {
+        @include textUpp (0.875rem, 1.31rem, 400);
+    }
+    /* footer */
+    .footer {
+        @include flexSpBetw;
+        flex-direction: column-reverse;
+    }
+    .copyright {
+        margin-top: 40px;
+        margin-bottom: 9px;
+    }
+    .socials {
+        padding: 0;
+        margin-top: 43px;
+        margin-bottom: 0;
+    }
+
+}

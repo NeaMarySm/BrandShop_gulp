@@ -1,0 +1,67 @@
+@mixin container($max-width:"120rem",$padding:"2rem"){
+	width: 100%;
+	max-width: #{$max-width};
+	padding: 0 #{$padding};
+	margin: 0 auto;
+}
+@mixin flexColCenter() {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@mixin text($size:0.875rem, $lHeight:17px, $weight:400) {
+    font-size: $size;
+    line-height: $lHeight;
+    font-weight: $weight;
+}
+@mixin textUpp ($size:0.875rem, $lHeight:17px, $weight:400) {
+    font-size: $size;
+    line-height: $lHeight;
+    font-weight: $weight;
+    text-transform: uppercase;
+}
+
+@mixin flexRow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin flexStart {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+@mixin flexSpBetw {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@mixin offerBackGr {
+    background-repeat: no-repeat;
+    background-color: #514643;
+    background-size: cover;
+}
+@mixin transition {
+    transition: all ease-out 240ms;
+}
+@mixin btn_anim($scaleMax:1.05, $scaleMin:0.95) {
+	transform-origin: center center;
+	transition: all ease-out 240ms;
+
+	&:hover {
+		transform: scale($scaleMax);
+	}
+
+	&:focus{
+		outline: transparent;
+	}
+
+	&:focus-visible {
+		transform: scale($scaleMax) translateY(-5%);
+	}
+
+	&:active {
+		transform: scale($scaleMin);
+	}
+}

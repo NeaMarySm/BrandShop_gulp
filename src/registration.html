@@ -1,0 +1,51 @@
+@@include("html/head.html", {"title": "Registration"})
+<body>
+   @@include("html/header.html")
+    <header class="page-header">
+        <div class="container page-header-container">
+            <h2 class="page-title">REGISTRATION</h2>
+        </div>
+    </header>
+    <main class="container registration-container">
+        <h1 class="visually-hidden">Registration</h1>
+        <section class="registration">
+            <h2 class="visually-hidden">Registration Form</h2>
+            <form class="registration-form form-style" action="#">
+                
+                <fieldset class="name">
+                    <legend>Your Name</legend>
+                    <input type="text" placeholder="first name" required><br>
+                    <input type="text" placeholder="last name"><br>
+                    <div class="gender">
+                        <input type="radio" name="gender" required> <span> Male</span>
+                        <input type="radio" name="gender" required> <span> Female</span>
+                    </div>
+                </fieldset>
+                <fieldset class="details">
+                    <legend>Login details</legend>
+                    <input type="email" placeholder="email" required><br>
+                    <input type="password" placeholder="password" required><br>
+                    <p class="password-terms" >Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</p>  
+                </fieldset>
+                <input class="button registration-submit" type="submit" value="JOIN NOW &rarr;">
+            </form>
+        </section>
+        <section class="perks">
+            <h2>LOYALTY HAS ITS PERKS</h2>
+            <p>Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:</p>
+            <ul>
+                <li>15% off welcome offer</li>
+                <li>Free shipping, returns and exchanges on all orders </li>
+                <li>$10 off a purchase on your birthday</li>
+                <li>Early access to products</li>
+                <li>Exclusive offers &amp; rewards</li>
+            </ul>
+
+        </section>
+
+    </main>
+    @@include("html/feedback.html")
+    @@include("html/footer.html")
+    @@include("html/script.html")
+</body>
+</html>
