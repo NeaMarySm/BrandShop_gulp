@@ -17,8 +17,7 @@
 .logo-icon {
     padding-right: 0.03%;
 }
-.menu {
-    padding-top: 9px; 
+.menu { 
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -37,7 +36,7 @@
     background-color: $pink;
     text-align: center;
     color: #ffffff;
-    @include text(12px, 14px, 400);
+    @include text(0.75rem, 0.875rem, 400);
     vertical-align: middle;
     padding-top: 3px;
     position: absolute;

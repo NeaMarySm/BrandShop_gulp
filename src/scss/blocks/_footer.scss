@@ -1,12 +1,12 @@
 .footer {
     background-color: $black;
-    min-height: 79px;
+    min-height: 5rem;
 }
 .copyright {
     float: left;
     padding: 0;
     color: $textWhite;
-    @include text(16px, 19px, 400);
+    @include text(1rem, 1.18rem, 400);
     margin-top: 30px;
     letter-spacing: 0.5px;
 }
@@ -16,11 +16,11 @@
     margin-left: 4px;
 }
 .social-link {
-    min-width: 32px;
-    min-height: 32px;
+    min-width: 2rem;
+    min-height: 2rem;
     color: $black2;
     @include flexRow;
-    font-size: 16px;
+    font-size: 1rem;
      &:hover {
         background-color: $pink;
         color: #fff;

@@ -16,23 +16,6 @@ $borderColor: #EAEAEA;
 $filterGray:#6F6E6E;
 $cartWidth: 40.75rem;
 $shadow: 17px 19px 24px 0px rgba(0, 0, 0, 0.13);
-@keyframes jump {
-
-    20% {
-        transform: translateX(100%);
-    }
-    40% {
-        transform: translateY(-150%);
-    }
-    80% {
-         transform: translateX(-100%);
-         
-     }
-    100% {
-        transform: translateX(0);
-    }
-    
-  }
 $accent:$pink; // Accent Color
 // $fontsize: 16px; // Body Font Size
 // $textcolor: #333; // Text Color
@@ -61,7 +44,7 @@ html, body {
     font-family: 'Lato', Arial, sans-serif;
     display: grid;
     grid-template-rows: min-content 1fr  min-content;
-    overflow-x: hidden
+    overflow-x: hidden;
 }
 a {
     text-decoration: none;

@@ -4,7 +4,7 @@
     flex-wrap: wrap;
 }
 .offer-item {
-    width: /*360px*/ 31.5%;
+    width: 31.5%;
     height: 260px;
 }
 .offer-link {
@@ -36,14 +36,14 @@
 }
 .offer-link p {
     color: #FFFFFF;
-    @include textUpp(16px, 19px, 400);
+    @include textUpp(1rem, 1.09rem, 400);
     margin: 0;
     padding: 0;
     text-align: center;
 }
 .offer-link h3 {
     color: $pink;
-    @include textUpp(24px, 29px, 700);
+    @include textUpp(1.5rem, 1.9rem, 700);
     margin: 0;
     text-align: center;
 }

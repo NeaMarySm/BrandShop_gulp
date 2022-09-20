@@ -3,7 +3,6 @@
 .product-card {
     width: $containerWidth;
     margin: -65px auto 0;
-    min-height: 600px;
     border: 1px solid $borderColor;
     background-color: #fff;
     flex-direction: column;
@@ -12,20 +11,20 @@
     z-index: 2;
 }
 .prod-top {
-    width: 642px;
+    max-width: 642px;
     border-bottom: 1px solid $borderColor;
     @include flexColCenter;
-    padding: 64px 42px;
+    padding: 5% 6%;
 
      h3 {  
          text-align: center;
         margin: 0;
         color: $pink;
-        @include textUpp(14px, 17px, 300);
+        @include textUpp(0.875rem, 1.06rem, 300);
      }
 }
 .divider {
-    width: 63px;
+    width: 12%;
     height: 3px;
     background-color: $darkPink;
     margin: 12px 0;
@@ -33,20 +32,20 @@
 .prod-heading {
     margin: 0;
     color: #4D4D4D;
-    @include textUpp(18px, 22px, 300);
+    @include textUpp(1.125rem, 1.375rem, 300);
     text-align: center;
 }
 .prod-description {
     text-align: center;
     color: #5E5E5E;
-    @include text(14px, 17px, 300);
+    @include text(0.875rem, 1.06rem, 300);
     margin-top: 48px;
     margin-bottom: 34px;
 }
 .prod-price {
     margin: 0;
     color: $darkPink;
-    @include text(24px, 29px, 300);
+    @include text(1.5rem, 1.8rem, 300);
     margin-left: -23px;
 }
 .prod-filter {
@@ -55,7 +54,7 @@
 }
 .filter-button-prod {
     color: $filterGray;
-    @include textUpp(14px, 17px, 400);
+    @include textUpp(0.875rem, 1.06rem, 400);
     cursor: pointer;
     padding: 0;
     margin-left: 23px;
@@ -65,7 +64,7 @@
     }
      i {
         margin-left: 8px;
-        font-size: 12px;
+        font-size: 0.75rem;
      }
 }
 

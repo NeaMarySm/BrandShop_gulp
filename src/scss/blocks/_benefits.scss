@@ -17,13 +17,13 @@
         margin: 0;
         margin-top: 25px;
         color: $textWhite; 
-        @include text(20px, 24px, 400);
+        @include text(1.25rem, 1.5rem, 400);
      }
      p {
         margin: 0;
         margin-top: 10px;
         color: $textWhite;
-        @include text(14px, 17px, 300); 
+        @include text(0.875rem, 1.06rem, 300); 
         text-align: center;
         opacity: 0.67;
      }

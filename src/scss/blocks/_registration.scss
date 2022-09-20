@@ -8,11 +8,11 @@
     max-width: 652px;
      h2 {
          margin: 0;
-         @include textUpp (24px, 29px, 300);
+         @include textUpp (1.5rem, 1.8rem, 300);
          color: #000;
      }
      p {
-        @include text (24px, 29px, 300);
+        @include text (1.5rem, 1.8rem, 300);
         color: #000;
      }
      ul {
@@ -20,7 +20,7 @@
      }
      li {
         margin-bottom: 16px;
-        @include text (24px, 29px, 300);
+        @include text (1.5rem, 1.8rem, 300);
         color: #000;
      }
 }

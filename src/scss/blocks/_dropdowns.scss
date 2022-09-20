@@ -10,9 +10,10 @@
     display: block;
     outline: none;
     padding: 0;
+    padding-left: 17px;
     color: #000000;
     fill: #000000;
-    @include textUpp(14px, 17px, 600);
+    @include textUpp(0.875rem, 1.06rem, 600);
     cursor: pointer;
      svg {
         margin-left: 10px;
@@ -36,8 +37,8 @@
     margin-bottom: 18px;
     display: block;
     padding-left: 11px;
-    width: 327px;
-    height: 37px;
+    width: 20.44rem;
+    height: 2.3rem;
     @include textUpp ();
     color: $filterGray;
     border-left: 5px solid $darkPink;
@@ -46,7 +47,7 @@
     cursor: pointer;
 }
 .filter-content {
-    width: 360px;
+    width: 22.5rem;
     position: absolute;
     left: 0;
     z-index: 3;
@@ -54,7 +55,7 @@
     box-shadow: $shadow;
 }
 .filter-item {
-    padding-top: 11px;
+    padding-top: 0.68rem;
 }
 .filter-link {
     @include text ();
@@ -88,9 +89,9 @@
 }
 .size-drop {
     position: absolute;
-    width: 79px;
-    height: 103px;
-    padding: 9px;
+    width: 5rem;
+    height: 6.4rem;
+    padding: 0.56rem;
     left: 0;
     background-color: #fff;
     z-index: 3;

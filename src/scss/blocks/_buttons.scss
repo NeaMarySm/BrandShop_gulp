@@ -5,8 +5,8 @@
     font-family: inherit;
 } 
 .button-browse {
-    width: 212px;
-    height: 48px;
+    width: 13.25rem;
+    height: 3rem;
     border: $pink solid 1px;
     color:#F26376;
     @include flexRow;
@@ -21,13 +21,13 @@
        
 }
 button.button-add {
-    @include text(16px, 19px, 400);
-    margin-bottom: 63px;
+    @include text(1rem, 1.18rem, 400);
+    margin-bottom: 5%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-right: 30px;
-    padding-left: 11px;
+    padding-right: 1.75rem;
+    padding-left: 0.7rem;
     fill: $darkPink;
     @include transition;
      &:hover {
@@ -35,8 +35,8 @@ button.button-add {
      }
 }
 .button-cat-hover {
-    width: 139px;
-    height: 44px;
+    width: 8.68rem;
+    height: 2.75rem;
     border: 1px solid #fff;
     @include flexRow;
     @include text();
@@ -45,14 +45,14 @@ button.button-add {
     background-color: transparent;
     @include btn_anim;
      svg {
-         margin-right: 11px;
+         margin-right: 0.68rem;
      }
      
 }
 
 /* cart */
 button.delete-button {
-    font-size: 26px;
+    font-size: 1.625rem;
     color: #575757;
     cursor: pointer;
     transition-duration: 0.5s;
@@ -62,8 +62,8 @@ button.delete-button {
 }
 .cart-button {
     min-width: 235px;
-    height: 50px;
-    @include textUpp (14px, 17px, 300);
+    height: 3.125rem;
+    @include textUpp (0.875rem, 1.06rem, 300);
     color: #000;
     border: $borderGray;
     @include flexRow;
@@ -76,11 +76,11 @@ button.delete-button {
 }
 .checkout-button {
     margin: 0;
-    width: 273px;
-    height: 50px;
+    width: 17.06rem;
+    height: 3.125rem;
     background-color: $darkPink;
     color: #fff;
-    @include textUpp(16px, 19px, 300);
+    @include textUpp(1rem, 1.18rem, 300);
     @include flexRow;
     cursor: pointer;
     @include transition;

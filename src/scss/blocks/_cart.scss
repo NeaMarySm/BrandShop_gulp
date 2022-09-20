@@ -24,7 +24,7 @@
          h2 {
              margin: 0;
              margin-top: 22px;
-             @include textUpp(24px, 29px, 400);
+             @include textUpp(1.5rem,1.8rem, 400);
              color: $black;
              
          }
@@ -32,7 +32,7 @@
             margin: 0;
             margin-bottom: 57px;
             padding: 0;
-            @include text (22px, 26px, 400);
+            @include text (1.375rem, 1.625rem, 400);
             color: #575757;
          }
          li {
@@ -42,10 +42,10 @@
             color: $darkPink;
          }
          input[type="number"]{
-             width: 44px;
+             width: 2.75rem;
              border: 1px solid $borderColor;
              margin-left: 20px;
-             font-size: 18px;
+             font-size: 1.125rem;
              text-align: center;
              color: #656565;
          }
@@ -77,12 +77,12 @@
     padding: 40px 44px 42px 43px;
      p {
          margin: 0;
-         @include textUpp(11px, 13px, 400);
+         @include textUpp(0.68rem, 0.81rem, 400);
          color: $colorA4;
      }
      p.grand {
          margin: 0;
-        @include textUpp(16px, 19px, 300);
+        @include textUpp(1rem, 1.18rem, 300);
         color: $black;
          span {
              margin: 0;
@@ -91,7 +91,7 @@
          }
      }
      .hr {
-         width: 275px;
+         width: 25%;
          height: 1px;
          background-color: #E2E2E2;
      }

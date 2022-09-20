@@ -1,6 +1,9 @@
 @@include("html/head.html", {"title": "Products"})
 <body>
-@@include("html/header.html")
+   @@include("html/header.html", {"main-page":"index.html",
+    "registration-page": "registration.html",
+    "cart-page": "cart.html",
+    })
     <header class="page-header">
         <div class="container page-header-container">
             <h2 class="page-title">NEW ARRIVALS</h2>
@@ -14,20 +17,6 @@
     <main>
         <h1 class="visually-hidden">Product Heading</h1>
         @@include("html/slider.html")
-        <!-- <section class="slider">
-            <h2 class="visually-hidden">Section Heading</h2>
-            <picture>
-                <source media="(max-width: 1180px)" srcset="@imgslider-tablet.png 1x, @imgslider-tablet2x.png 2x">
-                <source media="(max-width: 550px)" srcset="@imgslider-phone.png 1x, @imgslider-phone2x.png 2x">
-                <img src="@imgslider-img.png" srcset="@imgslider-img.png 1x, @imgslider-img2x.png 2x" alt="slider">
-            </picture>
-            <button class="arrow-button arrow-button-left button">
-                <i class="fas fa-chevron-left"></i>
-            </button>
-            <button class="arrow-button arrow-button-right button">
-                <i class="fas fa-chevron-right"></i>
-            </button>
-        </section> -->
         <section class="product-card container">
             <div class="prod-top">
                 <h3>WOMEN COLLECTION</h3>

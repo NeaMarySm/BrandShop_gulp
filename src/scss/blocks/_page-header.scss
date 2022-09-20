@@ -4,17 +4,17 @@
     background-color: $bgPink;
 }
 .page-header-container {
-    min-height: 148px;
+    height: 100%;
     @include flexSpBetw;
 }
 .page-title {
     color: $pink;
-    @include textUpp(24px, 29px, 400);
+    @include textUpp(1.5rem, 1.9rem, 400);
     margin-left: 10px;
 }
 .catalog-menu-item {
     color: #636363;
-    @include text(14px, 17px, 300);
+    @include text(0.875rem, 1.06rem, 300);
      &:hover {
          color: $pink;
      }

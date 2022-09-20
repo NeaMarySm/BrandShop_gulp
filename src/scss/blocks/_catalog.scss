@@ -18,13 +18,13 @@
      h2 {
         margin: 0 90px;
         color: $black;
-        @include text(30px, 36px, 400);
+        @include text(1.875rem, 2.25rem, 400);
         text-align: center;
         
      }
      p {
         color: #9F9F9F;
-        @include text(14px, 17px, 400);
+        @include text(0.875rem, 1.06rem, 400);
         margin-bottom: 20px;
         text-align: center;
         margin: 6px 180px 20px;
@@ -36,10 +36,6 @@
     background-color: #F8F8F8;
     margin-top: 30px;
     position: relative;
-     img:hover {
-         transform: scale(1.1);
-         @include transition;
-     }
      &-hover {
          width: 360px;
          height: 420px;
@@ -68,7 +64,7 @@
      h3 {
        
         color: #000000;
-        @include text(13px, 16px, 400);
+        @include text(0.812rem, 1rem, 400);
         text-transform: uppercase;
         margin-top: 20px;
      }
@@ -76,13 +72,13 @@
      p {
        
         color: #5D5D5D;
-        @include text(14px, 17px, 300);
+        @include text(0.875rem, 1.06rem, 300);
         padding-bottom: 4px;
      }
      span {
         text-transform: uppercase;
         color: $pink;
-        @include text(16px, 19px, 400);
+        @include text(1rem, 1.18rem, 400);
         display: block;
         margin-top: auto;
         margin-bottom: 20px;
@@ -108,8 +104,8 @@
     margin: 0;
     margin-top: 48px;
     margin-left: -28px;
-    width: 284px;
-    height: 44px;
+    width: 17.75rem;
+    height: 2.75rem;
     border: 1px solid $lightGray;
     display: flex;
     justify-content: space-around;
@@ -120,7 +116,7 @@
      }
      &-link {
         color: #C4C4C4;
-        @include text(16px, 19px, 300);
+        @include text(1rem, 1.18rem, 300);
          &-active {
             color: $darkPink;
         }

@@ -45,6 +45,7 @@
     }
     .checkout {
         margin-left: 15px;
+        margin-top: 0;
     }
     /* registration */
     .registration-container {
@@ -62,9 +63,6 @@
      }
      .banner-text-area{
          min-height: 368px;
-     }
-     .banner-text {
-         margin-top: 138px;
      }
      .banner-text h2 {   
         @include textUpp(2.75rem, 3.31rem, 900);
@@ -129,6 +127,7 @@
     }
     .checkout {
         margin-left: 0;
+
     }
     .registration-container {
         @include flexColCenter;
@@ -143,10 +142,10 @@
     .banner-text {
         margin-left: 0;
     }
-    .prod-top {
-        width: 100%;
-        padding: 64px 25px;
-    }
+    // .prod-top {
+    //     width: 100%;
+    //     padding: 64px 25px;
+    // }
  }
 
 
@@ -203,8 +202,8 @@
     }
     /* product */ 
     .slider img {
-            width: 374px;
-            height: 454px;
+            width: 100%;
+            height: auto;
     }
     .filter-button-prod {
         @include textUpp(0.625rem, 0.75rem, 400);

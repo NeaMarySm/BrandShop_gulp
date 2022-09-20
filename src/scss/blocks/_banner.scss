@@ -13,24 +13,25 @@
 .banner-text-area{
     width: 50%;
     min-height: $bannerHeight;
+    display: flex;
+    align-items: center;
     
 }
 .banner-text {
     margin-left: 6%;
-    margin-top: 292px;
     padding-left: 1rem;
     border-left: $pink solid 12px;
 }
 .banner-text h2 {
     margin: 0;
     color: $black;
-    @include textUpp(48px, 54px, 900);
+    @include textUpp(3rem, 3.375rem, 900);
     letter-spacing: 0.5px;
 }
 .banner-text p {
     margin: 0;
     color: $black;
-    @include textUpp(32px, 34px, 700);
+    @include textUpp(2rem, 2.125rem, 700);
 }
 .banner-text p span {
     color: $pink;
